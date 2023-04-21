@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .left-nav {
+    width: 200px;
+    background-color: #1b262c;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+  }
+
+  .left-nav-header {
+    background-color: #1b262c;
+    color: #D06224;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .left-nav-header h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .left-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .left-nav li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .left-nav li:hover {
+    background-color: #0f4c75;
+    color: #fff;
+  }
+  
+  .left-nav li.active {
+    background-color: #0f4c75;
+    color: #fff;
+  }
+  
+  .left-nav li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .top-nav {
+    background-color: #fff;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .top-nav li {
+    margin-right: 10px;
+  }
+  
+  .top-nav li a {
+    color: #1b262c;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+  }
+  
+  .top-nav li:first-child a {
+    border-left: none;
+  }
+  
+  .top-nav li.user-profile a {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .top-nav li.user-profile a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .top-nav li.lang-switcher a {
+    position: relative;
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+  
+  .top-nav li.lang-switcher a:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(language-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 5px;
+  }
+  
+  .top-nav .lang-code {
+    margin-right: 5px;
+    font-weight: bold;
+  }
+  
+  .top-nav .list-icon a img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  
+  
+  

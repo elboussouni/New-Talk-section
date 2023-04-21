@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Othmane</title>
+    <link rel="stylesheet" href="styles_new_talk.css" />
+  </head>
+  <body>
+    <nav class="left-nav">
+      <div class="left-nav-header">
+        <h2>OTHMANE</h2>
+      </div>
+      <ul>
+        <li class="section1"><a href="section1.html">Section 1</a></li>
+        <li class="section2"><a href="section2.html">Section 2</a></li>
+        <li class="new-talk"><a href="new_talk.html">New Talk</a></li>
+        <li class="section4"><a href="section4.html">Section 4</a></li>
+      </ul>
+    </nav>
+
+    <nav class="top-nav">
+      <ul>
+        <li class="user-profile">
+          <a href="#">
+            <img src="sets/omar.jpeg" alt="User Profile" />
+            <span class="user-name">mitopie makroum</span>
+          </a>
+        </li>
+        <li class="lang-switcher">
+          <a href="#">
+            <span class="lang-code">EN</span>
+          </a>
+        </li>
+        <li class="list-icon">
+          <a href="#"><img src="sets/list.png" alt="List" /></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content-container">
+      <div class="banner">
+        <h1>Create new talk</h1>
+      </div>
+      <h1 class="page-title">Create New Talk</h1>
+      <p class="page-subtitle">This form is for you to create a new talk.</p>
+      <div class="form-container">
+        <div class="form-progress">
+          <div class="form-progress-step active"></div>
+          <div class="form-progress-step"></div>
+          <div class="form-progress-step"></div>
+          <div class="form-progress-step"></div>
+        </div>
+
+        <div class="form-part" id="step-1">
+          <h2>Step 1: Talk Details</h2>
+          <form>
+            <label for="talk-title">Talk Title:</label>
+            <input type="text" id="talk-title" name="talk-title" required />
+
+            <label for="language">Language:</label>
+            <select id="language" name="language" required>
+              <option value="" disabled selected>Select a language</option>
+              <option value="english">English</option>
+              <option value="french">French</option>
+              <option value="spanish">Spanish</option>
+            </select>
+
+            <div class="form-buttons">
+              <button type="button" class="next-button">Next</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-part" id="step-2">
+          <h2>Step 2: Speaker Details</h2>
+          <form>
+            <label for="speaker-name">Speaker Name:</label>
+            <input type="text" id="speaker-name" name="speaker-name" required />
+
+            <label for="speaker-email">Speaker Email:</label>
+            <input
+              type="email"
+              id="speaker-email"
+              name="speaker-email"
+              required
+            />
+
+            <div class="form-buttons">
+              <button type="button" id="prev-btn-2" class="previous-button">
+                Previous
+              </button>
+              <button type="button" class="next-button">Next</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-part" id="step-3">
+          <h2>Step 3: Talk Content</h2>
+          <form>
+            <label for="talk-summary">Talk Summary:</label>
+            <textarea id="talk-summary" name="talk-summary" required></textarea>
+
+            <label for="talk-length">Talk Length:</label>
+            <select id="talk-length" name="talk-length" required>
+              <option value="" disabled selected>Select a length</option>
+              <option value="30-minutes">30 minutes</option>
+              <option value="60-minutes">60 minutes</option>
+              <option value="90-minutes">90 minutes</option>
+            </select>
+
+            <div class="form-buttons">
+              <button type="button" id="prev-btn-3" class="previous-button">
+                Previous
+              </button>
+              <button type="button" class="next-button">Next</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-part" id="step-4">
+          <h2>Step 4: Additional Details</h2>
+          <form>
+            <label for="talk-tags">Talk Tags:</label>
+            <input type="text" id="talk-tags" name="talk-tags" required />
+
+            <label for="talk-level">Talk Level:</label>
+            <select id="talk-level" name="talk-level" required>
+              <option value="" disabled selected>Select a level</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+
+            <div class="form-buttons">
+              <button type="button" id="prev-btn-4" class="previous-button">
+                Previous
+              </button>
+              <button type="submit" class="submit-button">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="form.js"></script>
+  </body>
+</html>
